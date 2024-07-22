@@ -1,0 +1,56 @@
+:root {
+    /* переменные цвета */
+    --colorWhite: #ffffff;
+    --colorBlack: #000000;
+    --colorBlack2: #222222;
+    --colorGrey: #757575;
+    --colorRed: #f44336;
+    --colorGreen: #4CAF50;
+    --colorOverlay: rgba(0, 0, 0, 0.8);
+  }
+  .sidebarContainer{
+
+    
+nav{
+    display: flex;
+    width: 100%;
+    padding:0.5rem 2rem;
+   h1{
+    color: var(--colorWhite);
+    background-color: var(--colorBlack);
+    padding: 0.5rem;
+   } 
+}
+   
+
+    div.sidebar{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--colorBlack);
+        width: 200px;
+        height: 100vh;
+        gap: 0.7rem;
+        align-items: center;
+        padding-top: 1rem;
+        
+        span{
+            padding: .7rem;
+            width: 100%;
+            a{
+                text-decoration: none;
+                
+            }
+            &:hover{
+                background-color: var(--colorBlack2);
+                cursor: pointer;
+            }
+        }
+    }
+    
+  }
+
+  
+
+  
+  
+  

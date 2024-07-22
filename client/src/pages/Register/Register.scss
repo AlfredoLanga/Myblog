@@ -1,0 +1,95 @@
+:root {
+    /* переменные цвета */
+    --colorWhite: #ffffff;
+    --colorBlack: #000000;
+    --colorBlack2: #222222;
+    --colorGrey: #757575;
+    --colorRed: #f44336;
+    --colorGreen: #4CAF50;
+    --colorOverlay: rgba(0, 0, 0, 0.8);
+  }
+
+.register-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+
+    
+    
+   h1{
+    color: var(--colorBlack2);
+    text-align: center;
+    font-size: 1.5rem;
+   }
+   form{
+    background-color: var(--colorWhite);
+    width: 400px;
+     border: none;
+     border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+   .form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+   
+    label{
+
+        color: var(--colorBlack2);
+    }
+    input{
+        padding: 0.5rem;
+        color: var(--colorBlack);
+        
+        &:valid{
+            border: solid 1px var(--colorGreen);
+        }
+        &:invalid{
+            border: solid red 1px;
+        }
+    }
+   
+    
+   }
+   button{
+    padding: 0.5rem;
+    background-color: var(--colorGreen);
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    &:hover{
+        color: var(--colorGreen);
+        background-color: transparent;
+        border: 1px solid var(--colorGreen);
+    }
+}
+span{
+    color: var(--colorGrey);
+    a{
+        color: var(--colorGreen);
+        text-decoration: none;
+    }
+}
+
+   }
+}
+@media(max-width:768px){
+    .register-container{
+      
+        padding: 1rem;
+        form{
+            padding: 1.5rem;
+            margin-top: 25%;
+            width: 100%;
+           
+        }
+    }
+   
+
+}

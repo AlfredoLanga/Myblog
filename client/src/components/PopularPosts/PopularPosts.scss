@@ -1,0 +1,60 @@
+:root {
+    /* переменные цвета */
+    --colorWhite: #ffffff;
+    --colorBlack: #000000;
+    --colorBlack2: #222222;
+    --colorGrey: #757575;
+    --colorRed: #f44336;
+    --colorGreen: #4CAF50;
+    --colorOverlay: rgba(0, 0, 0, 0.8);
+}
+.popular-container{
+    width: 100%;
+    background-color: var(--colorWhite);
+    display: flex;
+    margin-bottom: 0.1rem;
+    
+   
+    .content-post{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        
+        h1{
+            text-align: center;
+            background-color: var(--colorBlack);
+            padding: 0.5rem;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+        img{
+            width: 4rem;
+            height: 4rem;
+        }
+        h3{
+            color: var(--colorBlack2);
+        }
+        span{
+            color: var(--colorBlack2);
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+    }
+    &:hover{
+        background-color: var(--colorGrey);
+        h3{
+            color: var(--colorWhite);
+        }
+
+      span{
+            color: var(--colorWhite);
+        }
+        
+    }
+
+
+}

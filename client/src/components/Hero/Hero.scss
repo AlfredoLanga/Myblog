@@ -1,0 +1,56 @@
+:root {
+    /* переменные цвета */
+    --colorWhite: #ffffff;
+    --colorBlack: #000000;
+    --colorBlack2: #222222;
+    --colorGrey: #757575;
+    --colorRed: #f44336;
+    --colorGreen: #4CAF50;
+    --colorOverlay: rgba(0, 0, 0, 0.8);
+  }
+.hero-container{
+    margin-top: calc(8% - 30px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-color: var(--colorWhite);
+   width: 100%;
+   padding: 3rem;
+   border-bottom: solid 1px rgb(137, 128, 128);
+ 
+  
+  h1{
+    color: var(--colorBlack);
+    font-weight: 600;
+    font-size: 35px;
+    margin: 1rem;
+  
+  }
+  h4{
+    color: var(--colorBlack2);
+    span{
+        background-color: var(--colorBlack2);
+        padding: 0.2rem;
+        text-transform: capitalize;
+    }
+
+  }
+}
+@media (max-width:1024px){
+ 
+}
+@media (max-width:768px){
+  .hero-container{
+    padding: 1.8rem;
+    h1{
+      font-size: 22px;
+    }
+    span{
+      font-size: 10px;
+    
+    }
+    margin-top: 50px;
+   
+  }
+}

@@ -1,0 +1,54 @@
+:root {
+    /* переменные цвета */
+    --colorWhite: #ffffff;
+    --colorBlack: #000000;
+    --colorBlack2: #222222;
+    --colorGrey: #757575;
+    --colorRed: #f44336;
+    --colorGreen: #4CAF50;
+    --colorOverlay: rgba(0, 0, 0, 0.8);
+  }
+
+div.home-container{
+display: flex;
+flex-direction: column;
+    table{
+        width: 750px;
+        border: solid 1.5px var(--colorBlack);
+        th{
+            padding:0.5rem 1rem;
+        }
+        tbody{
+           td{
+            text-align: center;
+           }
+            
+         td.accaoes{
+            display: flex;
+            padding:0.1rem 0.5rem;
+            align-items: center;
+            justify-content: center;
+           gap: 0.5rem;
+            button{
+                padding: 0.4rem 2rem;
+                border-radius: 0.2rem;
+                border: none;
+                background-color: var(--colorRed);
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    width: 100%;
+                }
+                &:hover{
+                    opacity: 0.9;
+                }
+                &:nth-child(2){
+                    background-color: var(--colorGreen);
+                }
+            }
+            
+         }
+        }
+    }
+
+}
